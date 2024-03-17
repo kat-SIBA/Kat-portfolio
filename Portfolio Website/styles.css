@@ -19,9 +19,10 @@ body {
     padding: 40px;
                  }
 .left-side {
-    background: linear-gradient(45deg, #3498db, #f7faf8); /* Adjust colors as needed */
+    background: linear-gradient(30deg, #2e2f30, #cacccb); /* Adjust colors as needed */
     text-align: center;
-                }
+    height: 100vh;
+}
                 
 
 .right-side {
@@ -29,14 +30,21 @@ body {
 }
 
 .profile-image {
-    max-width: 90%;
+    max-width: 60%;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 5%;
 }
+
 
 .contact-info {
     margin-top: 20px;
-}
+    transition: color 0.3s;
 
+}
+.contact-info a:hover {
+    color: #a8dfe9; 
+}
 .projects, .about, .skills {
     margin-bottom: 20px;
 }
@@ -55,19 +63,55 @@ footer {
 /* Adjusted styling */
 .skills {
     margin-bottom: 20px; 
-    align-items: flex-start;
+    align-items:baseline;
+    display:flexbox;
+    size: 10%;
 }
 a {
     color: #333;
     text-decoration: none;
 }
-/* Additional styles for icons */
-.contact-info a {
-    margin-right: 10px;
-    color: #111111;
-    font-style: oblique;
-    /* Change the color as needed */
+
+
+.contact-info a:hover {
+    color: #a8dfe9; 
 }
-.contact-info i {
-    color: #93e5f3;
+.profile-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1)
+}
+ /* Additional styles for skills */
+ .skill-bar {
+    margin-left: 10px
+    ;
+}
+
+.skill-name {
+    display:flex;
+    width: 10px; 
+    margin-left: -2%;
+    height: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:lightgrey;
+
+}
+
+.skill-level {
+    display:flex;
+    width: calc(100% - 80px); /* Adjust as needed */
+    height: 10px;
+    background: linear-gradient(60deg, #cde6f79c 50%, transparent 50%);
+    border-radius: 5px;
+    margin-left: 10px;
+    border: #1b1b1b9c;}
+
+
+h2{
+    text-size-adjust: 10px;
+    text-wrap: 10%;
 }
