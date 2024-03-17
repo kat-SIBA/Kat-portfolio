@@ -37,14 +37,18 @@ body {
 }
 
 
-.contact-info {
-    margin-top: 20px;
-    transition: color 0.3s;
+.contact-info a i {
+    margin-right: 10px;
+    color: #111111;
+    font-style: oblique;
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s; /* Add smooth transition for color change */
+}
 
+.contact-info a i:hover {
+    color: #ff6600; /* Change the color on hover to orange (you can use any color you prefer) */
 }
-.contact-info a:hover {
-    color: #a8dfe9; 
-}
+
 .projects, .about, .skills {
     margin-bottom: 20px;
 }
