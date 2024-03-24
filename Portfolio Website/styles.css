@@ -1,121 +1,42 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
+header {
+    background-color: #333;
+    padding: 10px 0;
 }
 
-.left-side {
-    flex: 1;
-    padding: 10px;
-}
-.right-side {
-    flex: 2;
-    padding: 40px;
-                 }
-.left-side {
-    background: linear-gradient(30deg, #2e2f30, #cacccb); /* Adjust colors as needed */
+nav ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
-    height: 100vh;
-}
-                
-
-.right-side {
-    background-color: #ffffff;
 }
 
-.profile-image {
-    max-width: 60%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-left: 5%;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-
-.contact-info a i {
-    margin-right: 10px;
-    color: #111111;
-    font-style: oblique;
-    font-size: 24px; /* Adjust the size as needed */
-    transition: color 0.3s; /* Add smooth transition for color change */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.contact-info a i:hover {
-    color: #ff6600; /* Change the color on hover to orange (you can use any color you prefer) */
+.section {
+    padding: 50px 0;
+    text-align: center;
 }
 
-.projects, .about, .skills {
+.project {
     margin-bottom: 20px;
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
     background-color: #333;
     color: #fff;
-}
-
-
-
-    
-/* Adjusted styling */
-.skills {
-    margin-bottom: 20px; 
-    align-items:baseline;
-    display:flexbox;
-    size: 10%;
-}
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-
-.contact-info a:hover {
-    color: #a8dfe9; 
-}
-.profile-image {
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-image:hover {
-    transform: scale(1.1)
-}
- /* Additional styles for skills */
- .skill-bar {
-    margin-left: 10px
-    ;
-}
-
-.skill-name {
-    display:flex;
-    width: 10px; 
-    margin-left: -2%;
-    height: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:lightgrey;
-
-}
-
-.skill-level {
-    display:flex;
-    width: calc(100% - 80px); /* Adjust as needed */
-    height: 10px;
-    background: linear-gradient(60deg, #cde6f79c 50%, transparent 50%);
-    border-radius: 5px;
-    margin-left: 10px;
-    border: #1b1b1b9c;}
-
-
-h2{
-    text-size-adjust: 10px;
-    text-wrap: 10%;
+    text-align: center;
+    padding: 10px 0;
 }
