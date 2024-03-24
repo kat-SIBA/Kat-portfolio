@@ -1,42 +1,195 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #f2f2f2; /* Set background color */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align contents */
+}
+
+.profile {
+    margin-bottom: 20px; /* Add margin below profile */
+}
+
+.profile-image {
+    width: 150px; /* Adjust profile image size */
+    border-radius: 50%; /* Make image round */
+}
+
+.title {
+    font-size: 20px; /* Set font size for title */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+    list-style-type: none; /* Remove list bullet points */
+    padding: 0; /* Remove default padding */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline; /* Display navigation items horizontally */
+    margin-right: 20px; /* Add spacing between navigation items */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+.hero {
+    position: relative; /* Position hero section relative to its container */
+    background-image: url('https://th.bing.com/th/id/R.0edac6646dc9d48ed23fb9984b77d07d?rik=yD4%2bRdMg34aVNA&pid=ImgRaw&r=0'); /* Set hero background image */
+    background-size: cover; /* Cover the entire section */
+    color: #fff; /* Set text color */
+    padding: 100px 0; /* Add padding for spacing */
 }
 
-.section {
-    padding: 50px 0;
-    text-align: center;
+.hero nav {
+    position: absolute; /* Position navigation bar absolutely within the hero section */
+    top: 20px; /* Adjust top position as needed */
+    left: 900px;/* Adjust left position as needed */
 }
 
-.project {
+.profile {
+    position: absolute; /* Position profile section absolutely within the hero section */
+    bottom: 20px; /* Adjust bottom position as needed */
+    left: 20px; /* Adjust left position as needed */
+}
+
+.profile-image {
+    width: 150px; /* Adjust profile image size */
+    border-radius: 50%; /* Make image round */
+}
+
+.title {
+    font-size: 20px; /* Set font size for title */
+}
+
+
+
+/* About section styles */
+.about {
+    padding: 100px 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Projects section styles */
+.projects {
+    padding: 100px 0;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #00bcd4;
     color: #fff;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+.profile {
+    position: relative;
+    width: 200px; /* Adjust size as needed */
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.profile:hover .profile-image {
+    transform: scale(1.1);
+}
+
+.profile:hover .title {
+    transform: translateY(0);
 }
