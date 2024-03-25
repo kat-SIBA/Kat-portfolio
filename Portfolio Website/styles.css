@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f8f8f8;
+    background-color: #141414;
     color: #333;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #f2f2f2; /* Set background color */
+    background-color: #131313; /* Set background color */
     padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center align contents */
 }
@@ -47,15 +47,6 @@ nav ul li {
     display: inline; /* Display navigation items horizontally */
     margin-right: 20px; /* Add spacing between navigation items */
 }
-
-.hero {
-    position: relative; /* Position hero section relative to its container */
-    background-image: url('https://th.bing.com/th/id/R.0edac6646dc9d48ed23fb9984b77d07d?rik=yD4%2bRdMg34aVNA&pid=ImgRaw&r=0'); /* Set hero background image */
-    background-size: cover; /* Cover the entire section */
-    color: #fff; /* Set text color */
-    padding: 100px 0; /* Add padding for spacing */
-}
-
 .hero nav {
     position: absolute; /* Position navigation bar absolutely within the hero section */
     top: 20px; /* Adjust top position as needed */
@@ -128,39 +119,14 @@ footer p {
     font-size: 1.2rem;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .about h2 {
-        font-size: 2rem;
-    }
-
-    .about p {
-        font-size: 1rem;
-    }
-
-    .projects h2 {
-        font-size: 2rem;
-    }
-
-    .contact h2 {
-        font-size: 2rem;
-    }
-
     footer p {
         font-size: 1rem;
     }
+.profile:hover .profile-image {
+    transform: scale(1.1);
+}
+.profile:hover .profile-image {
+        transform: scale(1.1)
 }
 .profile {
     position: relative;
@@ -187,9 +153,9 @@ footer p {
 }
 
 .profile:hover .profile-image {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
-.profile:hover .title {
-    transform: translateY(0);
+.about-content.hidden {
+    display: none;
 }
